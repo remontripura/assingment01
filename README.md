@@ -20,14 +20,14 @@ example :  type Status = "success" | "failure" | "pending";
 
 intersection type : intersection type combines multiple types into one
 example:
-type Employee =  {
-  id: number;
-  name: string;
+type User = {
+id : number;
+userName : string;
 }
 
-type Manager =  {
-  department: string;
-  manageTeam(): void;
+type Admin = {
+isAdmin : true:
+user_id: number;
 }
 
-type EmployeeManager = Employee & Manager;
+type Editors = User & Admin
