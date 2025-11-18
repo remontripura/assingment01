@@ -21,13 +21,14 @@ example :  type Status = "success" | "failure" | "pending";
 intersection type : intersection type combines multiple types into one
 example:
 type User = {
-id : number;
-userName : string;
-}
+  id: number;
+  userName: string;
+};
 
 type Admin = {
-isAdmin : true:
-user_id: number;
-}
+  isAdmin: true;
+  user_id: number;
+};
 
-type Editors = User & Admin
+type Editor = User & Admin;
+
